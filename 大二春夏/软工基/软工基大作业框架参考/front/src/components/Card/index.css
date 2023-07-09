@@ -1,0 +1,122 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./img/night.jpg) no-repeat;
+    background-size: cover;
+} */
+
+.card {
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0;
+    box-sizing: border-box;
+    
+    width: 30%;
+    /* height: 70vh; */
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+.wrap {
+    width: 300px;
+    min-height: 100px;
+    display: grid;
+    grid-template-columns: 300px;
+    justify-content: space-between;
+}
+
+.card-item {
+    width: 100%;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: -1px 15px 30px -12px #000;
+    transform-style: preserve-3d;
+}
+
+.role {
+    width: 100%;
+    height: 180px;
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    position: relative;
+}
+
+.role img {
+    width: 390px;
+    position: absolute;
+    top: -10%;
+    left: -18%;
+    transform: translateZ(50px);
+}
+
+.des {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    transform: translateZ(50px);
+}
+
+.des h6 {
+    color: #f6901a;
+    font-weight: 400;
+}
+
+.des h1 {
+    padding: 10px;
+    font-size: 26px;
+}
+
+.des h1:hover {
+    color: #f6901a;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.des p {
+    text-align: left;
+    font-size: 15px;
+    padding: 0 16px;
+    color: #9e9e9e;
+}
+
+.btn-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: #f6901a;
+    border-radius: 20px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.btn h3 {
+    margin-bottom: 4px;
+    color: #fff;
+}
+
+.btn span {
+    font-size: 15px;
+    color: #fff;    
+}

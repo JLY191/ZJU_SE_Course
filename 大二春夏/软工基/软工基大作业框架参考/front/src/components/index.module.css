@@ -1,0 +1,18 @@
+.content{
+    background-color: #fff;
+}
+
+.sectioncontent{
+    padding: 32px;
+}
+
+.modifycontent{
+    font-size: medium;
+    font-style: normal;
+    font-weight: normal;
+    overflow: hidden;
+    height: 27px;
+    width: auto;
+    flex: 1;
+  
+}

@@ -1,0 +1,25 @@
+
+.top-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0.75);
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 20px, rgba(0, 0, 0, 0.3) 0px 6px 6px;
+}
+
+.top-bar .item1 {
+  margin: 15px;
+}
+
+.top-bar .bar-tag {
+  color: #fff;
+  font-weight: 550;
+  font-size: x-large;
+}
+
+.bar-tag a {
+  text-decoration: none;
+  color: inherit;
+}

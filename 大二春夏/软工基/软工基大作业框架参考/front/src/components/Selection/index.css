@@ -1,0 +1,133 @@
+/* CSS Document */
+.selection-container {
+  background: #e9ecef;
+  color: #333;
+  /* margin-top: -20px; */
+  z-index: 0;
+  border-radius: 20px;
+  box-shadow: 7px 7px 12px rgba(0, 0, 0, .4), -7px -7px 12px rgba(255, 255, 255, .9);
+}
+
+.selection {
+    width: 90%;
+    min-width: 1100px;
+    margin: 10px auto;
+}
+
+.selection nav {
+    /* position:absolute; */
+    left: 100px;
+    top: 100px;
+    /* border: 1px solid #b61d1d; */
+    border-radius: 10px;
+}
+
+/*全部商品分类*/
+.selection .all {
+    width: 220px;
+    height: 44px;
+    line-height: 44px;
+    background: #f6901a; 
+    padding: 0 10px;
+}
+
+.all a {
+    color: white;
+    font-size: 16px;
+}
+
+/*导航菜单*/
+.selection .nav_item {
+
+    width: 220px;
+    height: 31px;
+    line-height: 31px;
+    color: white;
+    /* background: #b61d1d; */
+    background: rgba(39, 37, 37, 0.85);
+
+    padding: 0 10px;
+}
+
+.selection ul li a {
+    color: white;
+}
+
+.jt {
+    color: white;
+    float: right;
+    width: 12px;
+    padding-top: 10px;
+    font: 13px consolas;
+}
+
+/*hover*/
+.selection ul li:hover {
+    background: white;
+}
+
+.selection ul li:hover a {
+    /* color: #b61d1d; */
+    color: rgba(39, 37, 37, 0.85);
+}
+
+/*submenu*/
+.sub_menu {
+    display: none;
+    width: 790px;
+    position: absolute;
+    z-index: 5;
+    left: 450px;
+    top: 366px;
+    background: #f7f7f7;
+}
+
+.selection ul li:hover .sub_menu {
+    display: block;
+}
+
+.leftmenu {
+    width: 550px;
+    overflow: hidden;
+    float: left;
+}
+
+.leftmenu dl {
+    overflow: hidden;
+    display: block;
+    margin: 20px 0;
+
+}
+
+.leftmenu dl dt {
+    float: left;
+    font-weight: bold;
+    color: #737373;
+    padding: 0 8px;
+
+}
+
+.leftmenu dl dd a {
+    color: #737373;
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 10px;
+    border-left: 1px solid #e0e0e0;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.rightmenu {
+    float: right;
+}
+
+.rightmenu dl {
+    margin-top: 20px;
+
+}
+
+.rightmenu dl dd {
+    padding: 0;
+    margin-bottom: 2px;
+}

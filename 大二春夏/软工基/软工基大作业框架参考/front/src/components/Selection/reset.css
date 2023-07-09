@@ -1,0 +1,55 @@
+.selection body,
+.selection div,
+.selection dl,
+.selection dt,
+.selection dd,
+.selection ul,
+.selection ol,
+.selection li,
+.selection h1,
+.selection h2,
+.selection h3,
+.selection h4,
+.selection h5,
+.selection h6,
+.selection pre,
+.selection form,
+.selection fieldset,
+.selection input,
+.selection textarea,
+.selection p,
+.selection blockquote,
+.selection th,
+.selection td {
+    padding: 0;
+    margin: 0;
+    border: none;
+    font-family: "Microsoft YaHei", "微软雅黑", "SimSun", "宋体";
+    font-size: 14px;
+}
+
+.selection ol,
+.selection ul {
+    list-style: none;
+}
+
+.selection fieldset,
+.selection img {
+    border: 0;
+}
+
+.selection h1,
+.selection h2,
+.selection h3,
+.selection h4,
+.selection h5,
+.selection h6 {
+    font-weight: normal;
+    font-size: 100%;
+}
+
+.selection img,
+.selection iframe {
+    border: none;
+    text-decoration: none;
+}
