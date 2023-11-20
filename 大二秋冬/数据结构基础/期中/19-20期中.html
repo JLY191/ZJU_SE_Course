@@ -1,0 +1,301 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>浙江大学2019-20秋冬《数据结构基础》期中模拟练习（45分钟）</title>
+  <style>.paper {
+  margin: 0;
+  font-family: var(--font-sans, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  color: var(--text-normal, hsl(0, 0%, 25%));
+}
+.paper *,
+.paper *::before,
+.paper *::after {
+  box-sizing: border-box;
+}
+.paper pre,
+.paper code,
+.paper kbd,
+.paper samp {
+  font-family: var(--font-mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace);
+  font-size: 12px;
+}
+.paper pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  overflow: auto;
+  -ms-overflow-style: scrollbar;
+}
+.paper label {
+  display: inline-block;
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+.paper hr {
+  height: 0;
+  border: 0;
+  border-top: 1px solid var(--scroll-thumb, hsl(0, 0%, 85%));
+  margin: 0;
+}
+.paper .result table {
+  width: 100%;
+}
+.paper .result th,
+.paper .result td {
+  border: 1px solid var(--border-all, hsla(0, 0%, 0%, 0.06));
+  text-align: center;
+}
+.paper .result .box {
+  border: 1px solid var(--border-all, hsla(0, 0%, 0%, 0.06));
+  padding: 8px;
+  color: var(--text-normal, hsl(0, 0%, 25%));
+}
+.rendered-markdown {
+  line-height: 1.5;
+}
+.rendered-markdown p {
+  margin: 0.5em 0;
+}
+.rendered-markdown p:first-child {
+  margin: 0;
+}
+.rendered-markdown h1, .rendered-markdown h2, .rendered-markdown h3, .rendered-markdown h4, .rendered-markdown h5, .rendered-markdown h6 {
+  margin: 0.8em 0;
+}
+.rendered-markdown img {
+  max-width: 100%;
+}
+.rendered-markdown textarea {
+  border-radius: 0.125rem;
+  width: 100%;
+  padding: 0.625rem;
+  box-sizing: border-box;
+  min-height: 6.25rem;
+}
+.rendered-markdown code {
+  font-size: 0.75em;
+  background: var(--bg-light);
+  border-radius: 0.1875rem;
+  border: 1px solid var(--border-all);
+  color: #e74c3c;
+  margin: 0 0.125em;
+}
+.rendered-markdown pre {
+  padding: 0.375rem 0.75rem;
+  background: var(--bg-light);
+  border: 1px solid var(--border-all);
+  border-radius: 0.1875rem;
+  word-break: break-all;
+}
+.rendered-markdown pre code {
+  background: none;
+  border: none;
+  color: var(--text-normal);
+  margin: 0;
+}
+.rendered-markdown hr {
+  border: none;
+  border-top: 1px solid var(--border-all);
+}
+.rendered-markdown blockquote {
+  margin: 0.5em 0;
+  padding: 0.125rem 0.875rem;
+  font-size: 0.75rem;
+  background: var(--bg-light);
+  border-left: 4px solid var(--border-all);
+}
+.rendered-markdown blockquote p {
+  margin-bottom: 0;
+}
+.rendered-markdown table {
+  margin: 0 auto;
+}
+.rendered-markdown table th, .rendered-markdown table td {
+  border: 1px solid var(--border-all);
+  padding: 0.3125rem;
+  font-size: 0.75rem;
+}
+.katex-mathml {
+  display: none;
+}
+</style>
+  <link rel="stylesheet" href="https://static.pintia.cn/assets/katex.min.css" crossorigin="anonymous">
+</head>
+<body>
+
+<div><div class="paper" style="max-width:940px;margin:auto"><div style="padding:16px;text-align:center;font-size:24px;font-weight:bold">浙江大学2019-20秋冬《数据结构基础》期中模拟练习（45分钟）</div><div style="width:calc(100% / 3);display:inline-flex;padding:4px"><span style="font-weight:bold;min-width:56px">开始时间</span><span style="margin-left:8px;overflow:hidden;text-overflow:ellipsis" title="01/01/2016 8:00:00 AM">01/01/2016 8:00:00 AM</span></div><div style="width:calc(100% / 3);display:inline-flex;padding:4px"><span style="font-weight:bold;min-width:56px">结束时间</span><span style="margin-left:8px;overflow:hidden;text-overflow:ellipsis" title="01/18/2038 8:00:00 AM">01/18/2038 8:00:00 AM</span></div><div style="width:calc(100% / 3);display:inline-flex;padding:4px"><span style="font-weight:bold;min-width:56px">答题时长</span><span style="margin-left:8px;overflow:hidden;text-overflow:ellipsis" title="45分钟">45分钟</span></div><div style="width:calc(100% / 3);display:inline-flex;padding:4px"><span style="font-weight:bold;min-width:56px">考生</span><span style="margin-left:8px;overflow:hidden;text-overflow:ellipsis" title="undefined"></span></div><div style="width:calc(100% / 3);display:inline-flex;padding:4px"><span style="font-weight:bold;min-width:56px">得分</span><span style="margin-left:8px;overflow:hidden;text-overflow:ellipsis" title="38">38</span></div><div style="width:calc(100% / 3);display:inline-flex;padding:4px"><span style="font-weight:bold;min-width:56px">总分</span><span style="margin-left:8px;overflow:hidden;text-overflow:ellipsis" title="100">100</span></div><hr/><div style="display:flex;font-size:16px;margin-top:16px"><span style="flex-grow:1;font-weight:bold">判断题</span><span>得分：12</span><span style="margin-left:20px">总分：15</span></div><div style="font-size:12px;display:block"><div style="margin-top:12px"><div style="display:flex"><div style="margin-right:8px;white-space:nowrap;font-weight:bold">R1-1</div><div style="overflow:auto;flex-grow:1"><div style="display:flex"><div class="markdownBlock" lang="en"><div class="rendered-markdown"><p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mi>N</mi></msqrt><mi>l</mi><mi>o</mi><mi>g</mi><mi>N</mi></mrow><annotation encoding="application/x-tex">\sqrt{N}logN</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.121105em;vertical-align:-0.19444em;"></span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9266650000000001em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord" style="padding-left:0.833em;"><span class="mord mathnormal" style="margin-right:0.10903em;">N</span></span></span><span style="top:-2.886665em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail" style="min-width:0.853em;height:1.08em;"><svg width='400em' height='1.08em' viewBox='0 0 400000 1080' preserveAspectRatio='xMinYMin slice'><path d='M95,702
+c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
+c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
+c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
+s173,378,173,378c0.7,0,35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429
+c69,-144,104.5,-217.7,106.5,-221
+l0 -0
+c5.3,-9.3,12,-14,20,-14
+H400000v40H845.2724
+s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
+c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
+M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.11333499999999996em;"><span></span></span></span></span></span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span></span></span></span> is <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>N</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mclose">)</span></span></span></span>.</p>
+</div></div><div style="color:gray;word-break:keep-all">(3分)</div></div><div style="display:flex;width:100px;justify-content:space-between"><div><input type="radio" id="TRUE" name="1199322448707088390" disabled="" checked="" value="TRUE"/><label style="margin-left:4px" for="TRUE">T</label></div><div><input type="radio" id="FALSE" name="1199322448707088390" disabled="" value="FALSE"/><label style="margin-left:4px" for="FALSE">F</label></div></div></div></div><div style="margin-top:8px;padding:4px;border:1px solid"><span style="margin-right:12px">评测结果</span><span style="color:#ff3b30">答案正确<!-- -->(3 分)</span></div></div><div style="margin-top:12px"><div style="display:flex"><div style="margin-right:8px;white-space:nowrap;font-weight:bold">R1-2</div><div style="overflow:auto;flex-grow:1"><div style="display:flex"><div class="markdownBlock" lang="en"><div class="rendered-markdown"><p>In <em>Union/Find</em> algorithm, if <em>Unions</em> are done by size, the depth of any node must be no more than <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mi mathvariant="normal">/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">N/2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mord">/2</span></span></span></span>, but not <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>l</mi><mi>o</mi><mi>g</mi><mi>N</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(logN)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mclose">)</span></span></span></span>. </p>
+</div></div><div style="color:gray;word-break:keep-all">(3分)</div></div><div style="display:flex;width:100px;justify-content:space-between"><div><input type="radio" id="TRUE" name="1199322448707088386" disabled="" checked="" value="TRUE"/><label style="margin-left:4px" for="TRUE">T</label></div><div><input type="radio" id="FALSE" name="1199322448707088386" disabled="" value="FALSE"/><label style="margin-left:4px" for="FALSE">F</label></div></div></div></div><div style="margin-top:8px;padding:4px;border:1px solid"><span style="margin-right:12px">评测结果</span><span style="color:#0a0">答案错误<!-- -->(0 分)</span></div></div><div style="margin-top:12px"><div style="display:flex"><div style="margin-right:8px;white-space:nowrap;font-weight:bold">R1-3</div><div style="overflow:auto;flex-grow:1"><div style="display:flex"><div class="markdownBlock" lang="en"><div class="rendered-markdown"><p>If a linear list is represented by a 1-dimensional array, the addresses of the elements in the memory must be consecutive.</p>
+</div></div><div style="color:gray;word-break:keep-all">(3分)</div></div><div style="display:flex;width:100px;justify-content:space-between"><div><input type="radio" id="TRUE" name="1199322448707088384" disabled="" checked="" value="TRUE"/><label style="margin-left:4px" for="TRUE">T</label></div><div><input type="radio" id="FALSE" name="1199322448707088384" disabled="" value="FALSE"/><label style="margin-left:4px" for="FALSE">F</label></div></div></div></div><div style="margin-top:8px;padding:4px;border:1px solid"><span style="margin-right:12px">评测结果</span><span style="color:#ff3b30">答案正确<!-- -->(3 分)</span></div></div><div style="margin-top:12px"><div style="display:flex"><div style="margin-right:8px;white-space:nowrap;font-weight:bold">R1-4</div><div style="overflow:auto;flex-grow:1"><div style="display:flex"><div class="markdownBlock" lang="en"><div class="rendered-markdown"><p>ADT is the abbreviation for Abstract Data Type in the textbook of data structures.</p>
+</div></div><div style="color:gray;word-break:keep-all">(3分)</div></div><div style="display:flex;width:100px;justify-content:space-between"><div><input type="radio" id="TRUE" name="1199322448707088389" disabled="" checked="" value="TRUE"/><label style="margin-left:4px" for="TRUE">T</label></div><div><input type="radio" id="FALSE" name="1199322448707088389" disabled="" value="FALSE"/><label style="margin-left:4px" for="FALSE">F</label></div></div></div></div><div style="margin-top:8px;padding:4px;border:1px solid"><span style="margin-right:12px">评测结果</span><span style="color:#ff3b30">答案正确<!-- -->(3 分)</span></div></div><div style="margin-top:12px"><div style="display:flex"><div style="margin-right:8px;white-space:nowrap;font-weight:bold">R1-5</div><div style="overflow:auto;flex-grow:1"><div style="display:flex"><div class="markdownBlock" lang="en"><div class="rendered-markdown"><p>In a directed graph, the sum of the in-degrees must be equal to the sum of the out-degrees of all the vertices.</p>
+</div></div><div style="color:gray;word-break:keep-all">(3分)</div></div><div style="display:flex;width:100px;justify-content:space-between"><div><input type="radio" id="TRUE" name="1199322448707088388" disabled="" checked="" value="TRUE"/><label style="margin-left:4px" for="TRUE">T</label></div><div><input type="radio" id="FALSE" name="1199322448707088388" disabled="" value="FALSE"/><label style="margin-left:4px" for="FALSE">F</label></div></div></div></div><div style="margin-top:8px;padding:4px;border:1px solid"><span style="margin-right:12px">评测结果</span><span style="color:#ff3b30">答案正确<!-- -->(3 分)</span></div></div></div><div style="display:flex;font-size:16px;margin-top:16px"><span style="flex-grow:1;font-weight:bold">单选题</span><span>得分：26</span><span style="margin-left:20px">总分：60</span></div><div style="font-size:12px;display:block"><div style="margin-top:12px"><div style="display:flex"><div style="margin-right:8px;white-space:nowrap;font-weight:bold">R2-1</div><div style="overflow:auto;flex-grow:1"><div style="display:flex"><div style="flex-grow:1"><div class="rendered-markdown"><p>If a binary search tree of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span></span></span></span> nodes is also a complete binary tree, then among the following, which one is FALSE?</p>
+</div></div><div style="color:gray;word-break:keep-all">(5分)</div></div><div style="flex-wrap:wrap;display:flex"><div style="flex-basis:97.5%;flex-grow:1"><input type="radio" id="A" name="1199322448707088393" disabled="" value="A"/><label style="margin-left:4px" for="A"><div style="display:flex"><div>A.</div><div style="margin-left:4px"><div class="rendered-markdown"><p>The average search time is <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>l</mi><mi>o</mi><mi>g</mi><mi>N</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(logN)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mclose">)</span></span></span></span></p>
+</div></div></div></label></div><div style="flex-basis:97.5%;flex-grow:1"><input type="radio" id="B" name="1199322448707088393" disabled="" checked="" value="B"/><label style="margin-left:4px" for="B"><div style="display:flex"><div>B.</div><div style="margin-left:4px"><div class="rendered-markdown"><p>The largest key must be on the last level</p>
+</div></div></div></label></div><div style="flex-basis:97.5%;flex-grow:1"><input type="radio" id="C" name="1199322448707088393" disabled="" value="C"/><label style="margin-left:4px" for="C"><div style="display:flex"><div>C.</div><div style="margin-left:4px"><div class="rendered-markdown"><p>The median key must be at either the root or in the left subtree of the root</p>
+</div></div></div></label></div><div style="flex-basis:97.5%;flex-grow:1"><input type="radio" id="D" name="1199322448707088393" disabled="" value="D"/><label style="margin-left:4px" for="D"><div style="display:flex"><div>D.</div><div style="margin-left:4px"><div class="rendered-markdown"><p>The smallest key must be at a leaf node</p>
+</div></div></div></label></div></div></div></div><div style="margin-top:8px;padding:4px;border:1px solid"><span style="margin-right:12px">评测结果</span><span style="color:#ff3b30">答案正确<!-- -->(5 分)</span></div></div><div style="margin-top:12px"><div style="display:flex"><div style="margin-right:8px;white-space:nowrap;font-weight:bold">R2-2</div><div style="overflow:auto;flex-grow:1"><div style="display:flex"><div style="flex-grow:1"><div class="rendered-markdown"><p>The following figure shows the AOE network of a project with 8 activities.  The earliest and the latest start times of the activity <code>d</code> are __, respectively.</p>
+<p><img src="https://images.ptausercontent.com/28de33de-076f-4f94-b856-445865994fb0.jpg" alt="GRE19-5.jpg"></p>
+</div></div><div style="color:gray;word-break:keep-all">(5分)</div></div><div style="flex-wrap:wrap;display:flex"><div style="flex-basis:47.5%;flex-grow:1"><input type="radio" id="A" name="1199322448707088415" disabled="" value="A"/><label style="margin-left:4px" for="A"><div style="display:flex"><div>A.</div><div style="margin-left:4px"><div class="rendered-markdown"><p>15 and 15</p>
+</div></div></div></label></div><div style="flex-basis:47.5%;flex-grow:1"><input type="radio" id="B" name="1199322448707088415" disabled="" checked="" value="B"/><label style="margin-left:4px" for="B"><div style="display:flex"><div>B.</div><div style="margin-left:4px"><div class="rendered-markdown"><p>12 and 14</p>
+</div></div></div></label></div><div style="flex-basis:47.5%;flex-grow:1"><input type="radio" id="C" name="1199322448707088415" disabled="" value="C"/><label style="margin-left:4px" for="C"><div style="display:flex"><div>C.</div><div style="margin-left:4px"><div class="rendered-markdown"><p>12 and 12</p>
+</div></div></div></label></div><div style="flex-basis:47.5%;flex-grow:1"><input type="radio" id="D" name="1199322448707088415" disabled="" value="D"/><label style="margin-left:4px" for="D"><div style="display:flex"><div>D.</div><div style="margin-left:4px"><div class="rendered-markdown"><p>3 and 7</p>
+</div></div></div></label></div></div></div></div><div style="margin-top:8px;padding:4px;border:1px solid"><span style="margin-right:12px">评测结果</span><span style="color:#ff3b30">答案正确<!-- -->(5 分)</span></div></div><div style="margin-top:12px"><div style="display:flex"><div style="margin-right:8px;white-space:nowrap;font-weight:bold">R2-3</div><div style="overflow:auto;flex-grow:1"><div style="display:flex"><div style="flex-grow:1"><div class="rendered-markdown"><p><img src="https://images.ptausercontent.com/e8409833-8ff2-4a95-9c5f-23e90ed6ae4f.jpg" alt="list.jpg"></p>
+<p>Which one of the following is the data structure that is best represented by the above picture?</p>
+</div></div><div style="color:gray;word-break:keep-all">(1分)</div></div><div style="flex-wrap:wrap;display:flex"><div style="flex-basis:97.5%;flex-grow:1"><input type="radio" id="A" name="1199322448707088392" disabled="" value="A"/><label style="margin-left:4px" for="A"><div style="display:flex"><div>A.</div><div style="margin-left:4px"><div class="rendered-markdown"><p>Complete binary tree</p>
+</div></div></div></label></div><div style="flex-basis:97.5%;flex-grow:1"><input type="radio" id="B" name="1199322448707088392" disabled="" value="B"/><label style="margin-left:4px" for="B"><div style="display:flex"><div>B.</div><div style="margin-left:4px"><div class="rendered-markdown"><p>Two-dimensional array</p>
+</div></div></div></label></div><div style="flex-basis:97.5%;flex-grow:1"><input type="radio" id="C" name="1199322448707088392" disabled="" value="C"/><label style="margin-left:4px" for="C"><div style="display:flex"><div>C.</div><div style="margin-left:4px"><div class="rendered-markdown"><p>Directed graph</p>
+</div></div></div></label></div><div style="flex-basis:97.5%;flex-grow:1"><input type="radio" id="D" name="1199322448707088392" disabled="" checked="" value="D"/><label style="margin-left:4px" for="D"><div style="display:flex"><div>D.</div><div style="margin-left:4px"><div class="rendered-markdown"><p>Circularly linked list</p>
+</div></div></div></label></div></div></div></div><div style="margin-top:8px;padding:4px;border:1px solid"><span style="margin-right:12px">评测结果</span><span style="color:#ff3b30">答案正确<!-- -->(1 分)</span></div></div><div style="margin-top:12px"><div style="display:flex"><div style="margin-right:8px;white-space:nowrap;font-weight:bold">R2-4</div><div style="overflow:auto;flex-grow:1"><div style="display:flex"><div style="flex-grow:1"><div class="rendered-markdown"><p>For a sequentially stored linear list of length <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span></span></span></span>, the time complexities for query and insertion are:</p>
+</div></div><div style="color:gray;word-break:keep-all">(5分)</div></div><div style="flex-wrap:wrap;display:flex"><div style="flex-basis:97.5%;flex-grow:1"><input type="radio" id="A" name="1199322448707088395" disabled="" value="A"/><label style="margin-left:4px" for="A"><div style="display:flex"><div>A.</div><div style="margin-left:4px"><div class="rendered-markdown"><p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span>, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span></p>
+</div></div></div></label></div><div style="flex-basis:97.5%;flex-grow:1"><input type="radio" id="B" name="1199322448707088395" disabled="" value="B"/><label style="margin-left:4px" for="B"><div style="display:flex"><div>B.</div><div style="margin-left:4px"><div class="rendered-markdown"><p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span>, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>N</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mclose">)</span></span></span></span></p>
+</div></div></div></label></div><div style="flex-basis:97.5%;flex-grow:1"><input type="radio" id="C" name="1199322448707088395" disabled="" value="C"/><label style="margin-left:4px" for="C"><div style="display:flex"><div>C.</div><div style="margin-left:4px"><div class="rendered-markdown"><p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>N</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mclose">)</span></span></span></span>, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span></p>
+</div></div></div></label></div><div style="flex-basis:97.5%;flex-grow:1"><input type="radio" id="D" name="1199322448707088395" disabled="" checked="" value="D"/><label style="margin-left:4px" for="D"><div style="display:flex"><div>D.</div><div style="margin-left:4px"><div class="rendered-markdown"><p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>N</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mclose">)</span></span></span></span>, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>N</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mclose">)</span></span></span></span></p>
+</div></div></div></label></div></div></div></div><div style="margin-top:8px;padding:4px;border:1px solid"><span style="margin-right:12px">评测结果</span><span style="color:#0a0">答案错误<!-- -->(0 分)</span></div></div><div style="margin-top:12px"><div style="display:flex"><div style="margin-right:8px;white-space:nowrap;font-weight:bold">R2-5</div><div style="overflow:auto;flex-grow:1"><div style="display:flex"><div style="flex-grow:1"><div class="rendered-markdown"><p>If graph G is NOT connected and has 27 edges, then it must have at least ____ vertices.</p>
+</div></div><div style="color:gray;word-break:keep-all">(5分)</div></div><div style="flex-wrap:wrap;display:flex"><div style="flex-basis:97.5%;flex-grow:1"><input type="radio" id="A" name="1199322448707088408" disabled="" checked="" value="A"/><label style="margin-left:4px" for="A"><div style="display:flex"><div>A.</div><div style="margin-left:4px"><div class="rendered-markdown"><p>8</p>
+</div></div></div></label></div><div style="flex-basis:97.5%;flex-grow:1"><input type="radio" id="B" name="1199322448707088408" disabled="" value="B"/><label style="margin-left:4px" for="B"><div style="display:flex"><div>B.</div><div style="margin-left:4px"><div class="rendered-markdown"><p>10</p>
+</div></div></div></label></div><div style="flex-basis:97.5%;flex-grow:1"><input type="radio" id="C" name="1199322448707088408" disabled="" value="C"/><label style="margin-left:4px" for="C"><div style="display:flex"><div>C.</div><div style="margin-left:4px"><div class="rendered-markdown"><p>7</p>
+</div></div></div></label></div><div style="flex-basis:97.5%;flex-grow:1"><input type="radio" id="D" name="1199322448707088408" disabled="" value="D"/><label style="margin-left:4px" for="D"><div style="display:flex"><div>D.</div><div style="margin-left:4px"><div class="rendered-markdown"><p>9</p>
+</div></div></div></label></div></div></div></div><div style="margin-top:8px;padding:4px;border:1px solid"><span style="margin-right:12px">评测结果</span><span style="color:#0a0">答案错误<!-- -->(0 分)</span></div></div><div style="margin-top:12px"><div style="display:flex"><div style="margin-right:8px;white-space:nowrap;font-weight:bold">R2-6</div><div style="overflow:auto;flex-grow:1"><div style="display:flex"><div style="flex-grow:1"><div class="rendered-markdown"><p>A full tree of degree 3 is a tree in which every node other than the leaves has 3 children.  How many leaves does a full tree of degree 3 have if it has 127 nodes?</p>
+</div></div><div style="color:gray;word-break:keep-all">(5分)</div></div><div style="flex-wrap:wrap;display:flex"><div style="flex-basis:97.5%;flex-grow:1"><input type="radio" id="A" name="1199322448707088401" disabled="" value="A"/><label style="margin-left:4px" for="A"><div style="display:flex"><div>A.</div><div style="margin-left:4px"><div class="rendered-markdown"><p>41</p>
+</div></div></div></label></div><div style="flex-basis:97.5%;flex-grow:1"><input type="radio" id="B" name="1199322448707088401" disabled="" value="B"/><label style="margin-left:4px" for="B"><div style="display:flex"><div>B.</div><div style="margin-left:4px"><div class="rendered-markdown"><p>86</p>
+</div></div></div></label></div><div style="flex-basis:97.5%;flex-grow:1"><input type="radio" id="C" name="1199322448707088401" disabled="" value="C"/><label style="margin-left:4px" for="C"><div style="display:flex"><div>C.</div><div style="margin-left:4px"><div class="rendered-markdown"><p>42</p>
+</div></div></div></label></div><div style="flex-basis:97.5%;flex-grow:1"><input type="radio" id="D" name="1199322448707088401" disabled="" checked="" value="D"/><label style="margin-left:4px" for="D"><div style="display:flex"><div>D.</div><div style="margin-left:4px"><div class="rendered-markdown"><p>85</p>
+</div></div></div></label></div></div></div></div><div style="margin-top:8px;padding:4px;border:1px solid"><span style="margin-right:12px">评测结果</span><span style="color:#ff3b30">答案正确<!-- -->(5 分)</span></div></div><div style="margin-top:12px"><div style="display:flex"><div style="margin-right:8px;white-space:nowrap;font-weight:bold">R2-7</div><div style="overflow:auto;flex-grow:1"><div style="display:flex"><div style="flex-grow:1"><div class="rendered-markdown"><p>Since the speed of a printer cannot match the speed of a computer, a buffer is designed to temperarily store the data from a computer so that later the printer can retrieve data in order.  Then the proper structure of the buffer shall be a:</p>
+</div></div><div style="color:gray;word-break:keep-all">(5分)</div></div><div style="flex-wrap:wrap;display:flex"><div style="flex-basis:97.5%;flex-grow:1"><input type="radio" id="A" name="1199322448707088399" disabled="" value="A"/><label style="margin-left:4px" for="A"><div style="display:flex"><div>A.</div><div style="margin-left:4px"><div class="rendered-markdown"><p>tree</p>
+</div></div></div></label></div><div style="flex-basis:97.5%;flex-grow:1"><input type="radio" id="B" name="1199322448707088399" disabled="" value="B"/><label style="margin-left:4px" for="B"><div style="display:flex"><div>B.</div><div style="margin-left:4px"><div class="rendered-markdown"><p>stack</p>
+</div></div></div></label></div><div style="flex-basis:97.5%;flex-grow:1"><input type="radio" id="C" name="1199322448707088399" disabled="" checked="" value="C"/><label style="margin-left:4px" for="C"><div style="display:flex"><div>C.</div><div style="margin-left:4px"><div class="rendered-markdown"><p>queue</p>
+</div></div></div></label></div><div style="flex-basis:97.5%;flex-grow:1"><input type="radio" id="D" name="1199322448707088399" disabled="" value="D"/><label style="margin-left:4px" for="D"><div style="display:flex"><div>D.</div><div style="margin-left:4px"><div class="rendered-markdown"><p>graph</p>
+</div></div></div></label></div></div></div></div><div style="margin-top:8px;padding:4px;border:1px solid"><span style="margin-right:12px">评测结果</span><span style="color:#ff3b30">答案正确<!-- -->(5 分)</span></div></div><div style="margin-top:12px"><div style="display:flex"><div style="margin-right:8px;white-space:nowrap;font-weight:bold">R2-8</div><div style="overflow:auto;flex-grow:1"><div style="display:flex"><div style="flex-grow:1"><div class="rendered-markdown"><p>Let <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal">n</span></span></span></span> be a non-negative integer representing the size of input.  The time complexity of the following piece of code is:</p>
+<pre><code>x = 0;
+while ( n &gt;= (x+1)*(x+1) )
+    x = x+1;<br /></code></pre>
+</div></div><div style="color:gray;word-break:keep-all">(5分)</div></div><div style="flex-wrap:wrap;display:flex"><div style="flex-basis:97.5%;flex-grow:1"><input type="radio" id="A" name="1199322448707088412" disabled="" checked="" value="A"/><label style="margin-left:4px" for="A"><div style="display:flex"><div>A.</div><div style="margin-left:4px"><div class="rendered-markdown"><p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>l</mi><mi>o</mi><mi>g</mi><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(log n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></p>
+</div></div></div></label></div><div style="flex-basis:97.5%;flex-grow:1"><input type="radio" id="B" name="1199322448707088412" disabled="" value="B"/><label style="margin-left:4px" for="B"><div style="display:flex"><div>B.</div><div style="margin-left:4px"><div class="rendered-markdown"><p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><msup><mi>n</mi><mrow><mn>1</mn><mi mathvariant="normal">/</mi><mn>2</mn></mrow></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n^{1/2})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.138em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8879999999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1/2</span></span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></p>
+</div></div></div></label></div><div style="flex-basis:97.5%;flex-grow:1"><input type="radio" id="C" name="1199322448707088412" disabled="" value="C"/><label style="margin-left:4px" for="C"><div style="display:flex"><div>C.</div><div style="margin-left:4px"><div class="rendered-markdown"><p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></p>
+</div></div></div></label></div><div style="flex-basis:97.5%;flex-grow:1"><input type="radio" id="D" name="1199322448707088412" disabled="" value="D"/><label style="margin-left:4px" for="D"><div style="display:flex"><div>D.</div><div style="margin-left:4px"><div class="rendered-markdown"><p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><msup><mi>n</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n^2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></p>
+</div></div></div></label></div></div></div></div><div style="margin-top:8px;padding:4px;border:1px solid"><span style="margin-right:12px">评测结果</span><span style="color:#0a0">答案错误<!-- -->(0 分)</span></div></div><div style="margin-top:12px"><div style="display:flex"><div style="margin-right:8px;white-space:nowrap;font-weight:bold">R2-9</div><div style="overflow:auto;flex-grow:1"><div style="display:flex"><div style="flex-grow:1"><div class="rendered-markdown"><p>From the given graph shown by the figure, how many different topological orders can we obtain?</p>
+<p><img src="https://images.ptausercontent.com/79" alt=""></p>
+</div></div><div style="color:gray;word-break:keep-all">(5分)</div></div><div style="flex-wrap:wrap;display:flex"><div style="flex-basis:97.5%;flex-grow:1"><input type="radio" id="A" name="1199322448707088413" disabled="" value="A"/><label style="margin-left:4px" for="A"><div style="display:flex"><div>A.</div><div style="margin-left:4px"><div class="rendered-markdown"><p>2</p>
+</div></div></div></label></div><div style="flex-basis:97.5%;flex-grow:1"><input type="radio" id="B" name="1199322448707088413" disabled="" value="B"/><label style="margin-left:4px" for="B"><div style="display:flex"><div>B.</div><div style="margin-left:4px"><div class="rendered-markdown"><p>1</p>
+</div></div></div></label></div><div style="flex-basis:97.5%;flex-grow:1"><input type="radio" id="C" name="1199322448707088413" disabled="" checked="" value="C"/><label style="margin-left:4px" for="C"><div style="display:flex"><div>C.</div><div style="margin-left:4px"><div class="rendered-markdown"><p>3</p>
+</div></div></div></label></div><div style="flex-basis:97.5%;flex-grow:1"><input type="radio" id="D" name="1199322448707088413" disabled="" value="D"/><label style="margin-left:4px" for="D"><div style="display:flex"><div>D.</div><div style="margin-left:4px"><div class="rendered-markdown"><p>4</p>
+</div></div></div></label></div></div></div></div><div style="margin-top:8px;padding:4px;border:1px solid"><span style="margin-right:12px">评测结果</span><span style="color:#ff3b30">答案正确<!-- -->(5 分)</span></div></div><div style="margin-top:12px"><div style="display:flex"><div style="margin-right:8px;white-space:nowrap;font-weight:bold">R2-10</div><div style="overflow:auto;flex-grow:1"><div style="display:flex"><div style="flex-grow:1"><div class="rendered-markdown"><p>If besides finding the shortest path from <code>S</code> to every other vertices, we also need to count the number of different shortest paths, we can modify the Dijkstra algorithm in the following way: add an array <code>count[]</code> so that <code>count[V]</code> records the number of different shortest paths from <code>S</code> to <code>V</code>.  Then <code>count[V]</code> shall be initialized as:</p>
+</div></div><div style="color:gray;word-break:keep-all">(5分)</div></div><div style="flex-wrap:wrap;display:flex"><div style="flex-basis:97.5%;flex-grow:1"><input type="radio" id="A" name="1199322448707088410" disabled="" value="A"/><label style="margin-left:4px" for="A"><div style="display:flex"><div>A.</div><div style="margin-left:4px"><div class="rendered-markdown"><p><code>count[V]=1</code> for all vertices</p>
+</div></div></div></label></div><div style="flex-basis:97.5%;flex-grow:1"><input type="radio" id="B" name="1199322448707088410" disabled="" value="B"/><label style="margin-left:4px" for="B"><div style="display:flex"><div>B.</div><div style="margin-left:4px"><div class="rendered-markdown"><p><code>count[S]=1; </code> and <code>count[V]=0</code> for other <code>V</code></p>
+</div></div></div></label></div><div style="flex-basis:97.5%;flex-grow:1"><input type="radio" id="C" name="1199322448707088410" disabled="" value="C"/><label style="margin-left:4px" for="C"><div style="display:flex"><div>C.</div><div style="margin-left:4px"><div class="rendered-markdown"><p><code>count[V]=0</code> for all vertices</p>
+</div></div></div></label></div><div style="flex-basis:97.5%;flex-grow:1"><input type="radio" id="D" name="1199322448707088410" disabled="" checked="" value="D"/><label style="margin-left:4px" for="D"><div style="display:flex"><div>D.</div><div style="margin-left:4px"><div class="rendered-markdown"><p><code>count[S]=0; </code> and <code>count[V]=1</code> for other <code>V</code></p>
+</div></div></div></label></div></div></div></div><div style="margin-top:8px;padding:4px;border:1px solid"><span style="margin-right:12px">评测结果</span><span style="color:#0a0">答案错误<!-- -->(0 分)</span></div></div><div style="margin-top:12px"><div style="display:flex"><div style="margin-right:8px;white-space:nowrap;font-weight:bold">R2-11</div><div style="overflow:auto;flex-grow:1"><div style="display:flex"><div style="flex-grow:1"><div class="rendered-markdown"><p>Given the shape of a binary tree shown by the figure below.  If its postorder traversal sequence is { <code>e</code>, <code>a</code>, <code>c</code>, <code>b</code>, <code>d</code>, <code>f</code> }, then the node on the same level of <code>b</code> must be:</p>
+<p><img src="https://images.ptausercontent.com/2d267eab-f47e-44ea-9019-5d0a102f741a.JPG" alt="mt1.JPG"></p>
+</div></div><div style="color:gray;word-break:keep-all">(5分)</div></div><div style="flex-wrap:wrap;display:flex"><div style="flex-basis:97.5%;flex-grow:1"><input type="radio" id="A" name="1199322448707088403" disabled="" value="A"/><label style="margin-left:4px" for="A"><div style="display:flex"><div>A.</div><div style="margin-left:4px"><div class="rendered-markdown"><p>None</p>
+</div></div></div></label></div><div style="flex-basis:97.5%;flex-grow:1"><input type="radio" id="B" name="1199322448707088403" disabled="" value="B"/><label style="margin-left:4px" for="B"><div style="display:flex"><div>B.</div><div style="margin-left:4px"><div class="rendered-markdown"><p><code>c</code></p>
+</div></div></div></label></div><div style="flex-basis:97.5%;flex-grow:1"><input type="radio" id="C" name="1199322448707088403" disabled="" value="C"/><label style="margin-left:4px" for="C"><div style="display:flex"><div>C.</div><div style="margin-left:4px"><div class="rendered-markdown"><p><code>a</code></p>
+</div></div></div></label></div><div style="flex-basis:97.5%;flex-grow:1"><input type="radio" id="D" name="1199322448707088403" disabled="" checked="" value="D"/><label style="margin-left:4px" for="D"><div style="display:flex"><div>D.</div><div style="margin-left:4px"><div class="rendered-markdown"><p><code>e</code></p>
+</div></div></div></label></div></div></div></div><div style="margin-top:8px;padding:4px;border:1px solid"><span style="margin-right:12px">评测结果</span><span style="color:#0a0">答案错误<!-- -->(0 分)</span></div></div><div style="margin-top:12px"><div style="display:flex"><div style="margin-right:8px;white-space:nowrap;font-weight:bold">R2-12</div><div style="overflow:auto;flex-grow:1"><div style="display:flex"><div style="flex-grow:1"><div class="rendered-markdown"><p>The array representation of the disjoint sets is given by {2, –4, 2, 3, -3, 5, 6, 9, -2}. Keep in mind that the elements are numbered from 1 to 9. After invoking Union(Find(4), Find(6)) with union-by-size, which elements will be changed in the resulting array?</p>
+</div></div><div style="color:gray;word-break:keep-all">(4分)</div></div><div style="flex-wrap:wrap;display:flex"><div style="flex-basis:97.5%;flex-grow:1"><input type="radio" id="A" name="1199322448707088417" disabled="" value="A"/><label style="margin-left:4px" for="A"><div style="display:flex"><div>A.</div><div style="margin-left:4px"><div class="rendered-markdown"><p>a.    elements of index 4 and 6</p>
+</div></div></div></label></div><div style="flex-basis:97.5%;flex-grow:1"><input type="radio" id="B" name="1199322448707088417" disabled="" checked="" value="B"/><label style="margin-left:4px" for="B"><div style="display:flex"><div>B.</div><div style="margin-left:4px"><div class="rendered-markdown"><p>a.    elements of index 2 and 6</p>
+</div></div></div></label></div><div style="flex-basis:97.5%;flex-grow:1"><input type="radio" id="C" name="1199322448707088417" disabled="" value="C"/><label style="margin-left:4px" for="C"><div style="display:flex"><div>C.</div><div style="margin-left:4px"><div class="rendered-markdown"><p>a.    elements of index 4 and 5</p>
+</div></div></div></label></div><div style="flex-basis:97.5%;flex-grow:1"><input type="radio" id="D" name="1199322448707088417" disabled="" value="D"/><label style="margin-left:4px" for="D"><div style="display:flex"><div>D.</div><div style="margin-left:4px"><div class="rendered-markdown"><p>a.    elements of index 2 and 5</p>
+</div></div></div></label></div></div></div></div><div style="margin-top:8px;padding:4px;border:1px solid"><span style="margin-right:12px">评测结果</span><span style="color:#0a0">答案错误<!-- -->(0 分)</span></div></div><div style="margin-top:12px"><div style="display:flex"><div style="margin-right:8px;white-space:nowrap;font-weight:bold">R2-13</div><div style="overflow:auto;flex-grow:1"><div style="display:flex"><div style="flex-grow:1"><div class="rendered-markdown"><p>Given the popping sequence of a stack as {1, 2, 3, 4, 5}.  Among the following, the impossible pushing sequence is:</p>
+</div></div><div style="color:gray;word-break:keep-all">(5分)</div></div><div style="flex-wrap:wrap;display:flex"><div style="flex-basis:97.5%;flex-grow:1"><input type="radio" id="A" name="1199322448707088397" disabled="" value="A"/><label style="margin-left:4px" for="A"><div style="display:flex"><div>A.</div><div style="margin-left:4px"><div class="rendered-markdown"><p>4 5 1 3 2</p>
+</div></div></div></label></div><div style="flex-basis:97.5%;flex-grow:1"><input type="radio" id="B" name="1199322448707088397" disabled="" checked="" value="B"/><label style="margin-left:4px" for="B"><div style="display:flex"><div>B.</div><div style="margin-left:4px"><div class="rendered-markdown"><p>3 2 1 5 4</p>
+</div></div></div></label></div><div style="flex-basis:97.5%;flex-grow:1"><input type="radio" id="C" name="1199322448707088397" disabled="" value="C"/><label style="margin-left:4px" for="C"><div style="display:flex"><div>C.</div><div style="margin-left:4px"><div class="rendered-markdown"><p>5 4 1 2 3</p>
+</div></div></div></label></div><div style="flex-basis:97.5%;flex-grow:1"><input type="radio" id="D" name="1199322448707088397" disabled="" value="D"/><label style="margin-left:4px" for="D"><div style="display:flex"><div>D.</div><div style="margin-left:4px"><div class="rendered-markdown"><p>5 1 2 3 4</p>
+</div></div></div></label></div></div></div></div><div style="margin-top:8px;padding:4px;border:1px solid"><span style="margin-right:12px">评测结果</span><span style="color:#0a0">答案错误<!-- -->(0 分)</span></div></div></div><div style="display:flex;font-size:16px;margin-top:16px"><span style="flex-grow:1;font-weight:bold">程序填空题</span><span>得分：暂无</span><span style="margin-left:20px">总分：25</span></div><div style="font-size:12px;display:block"><div style="margin-top:12px"><div style="display:flex"><div style="margin-right:8px;white-space:nowrap;font-weight:bold">R5-1</div><div style="overflow:auto;flex-grow:1"><div><div class="rendered-markdown"><p>The function <code>Dijkstra</code> is to find the shortest path from <code>Vertex S</code> to every other vertices in a given <code>Graph</code>.  The distances are stored in <code>dist[]</code>, and <code>path[]</code> records the paths.  The <code>MGraph</code> is defined as the following:</p>
+<pre><code>typedef struct GNode *PtrToGNode;
+struct GNode{
+    int Nv;  /* Number of vertices */
+    int Ne;  /* Number of edges    */
+    WeightType G[MaxVertexNum][MaxVertexNum]; /* adjacency matrix */
+};
+typedef PtrToGNode MGraph;<br /></code></pre>
+<pre><code class="language-c++">void Dijkstra( MGraph Graph, int dist[], int path[], Vertex S )
+{
+    int collected[MaxVertexNum];
+    Vertex V, W;
+
+    for ( V=0; V&lt;Graph-&gt;Nv; V++ ) {
+        dist[V] = Graph-&gt;G[S][V];
+        path[V] = -1;
+        collected[V] = false;
+    }
+    dist[S] = 0;
+    collected[S] = true;
+
+    while (1) {
+        V = FindMinDist( Graph, dist, collected );
+        if ( V==ERROR ) break;
+        collected[V] = true;
+        for( W=0; W&lt;Graph-&gt;Nv; W++ )
+            if ( collected[W]==false &amp;&amp; Graph-&gt;G[V][W]&lt;INFINITY ) {
+                if ( <span><input style="max-width:none;width:19.2ch;max-height:500px" type="text" disabled="" value=""/><span style="margin-left:4px;color:gray">(4分)</span></span> ) {
+                    dist[W] = <span><input style="max-width:none;width:19.2ch;max-height:500px" type="text" disabled="" value=""/><span style="margin-left:4px;color:gray">(3分)</span></span>;
+                    path[W] = <span><input style="max-width:none;width:19.2ch;max-height:500px" type="text" disabled="" value=""/><span style="margin-left:4px;color:gray">(3分)</span></span>;
+                }
+            }
+    } /* end while */
+}<br /></code></pre>
+</div></div></div></div></div><div style="margin-top:12px"><div style="display:flex"><div style="margin-right:8px;white-space:nowrap;font-weight:bold">R5-2</div><div style="overflow:auto;flex-grow:1"><div><div class="rendered-markdown"><p>The function is to return the reverse linked list of <code>L</code>, with a dummy header.</p>
+<pre><code class="language-c++">List Reverse( List L )
+{
+    Position Old_head, New_head, Temp;
+    New_head = NULL;
+    Old_head = L-&gt;Next;
+
+    while ( Old_head )  {
+        Temp = Old_head-&gt;Next;
+        <span><input style="max-width:none;width:19.2ch;max-height:500px" type="text" disabled="" value=""/><span style="margin-left:4px;color:gray">(3分)</span></span>;  
+        New_head = Old_head;  
+        Old_head = Temp; 
+    }
+    <span><input style="max-width:none;width:19.2ch;max-height:500px" type="text" disabled="" value=""/><span style="margin-left:4px;color:gray">(3分)</span></span>;
+    return L;
+}<br /></code></pre>
+</div></div></div></div></div><div style="margin-top:12px"><div style="display:flex"><div style="margin-right:8px;white-space:nowrap;font-weight:bold">R5-3</div><div style="overflow:auto;flex-grow:1"><div><div class="rendered-markdown"><p>Please fill in the blanks in the program which deletes a given element at position <code>p</code> from a max-heap <code>H</code>.</p>
+<pre><code class="language-c++">Deletion ( PriorityQueue H,  int p )  /* delete the element H-&gt;Elements[p] */
+{
+   ElementType temp;
+   int child;
+
+   temp = H-&gt; Elements[ H-&gt;Size-- ];
+   if ( temp &gt; H-&gt;Elements[p] ) {
+      while ( (p != 1) &amp;&amp; (temp &gt; H-&gt;Elements[p/2]) ) { 
+         <span><input style="max-width:none;width:19.2ch;max-height:500px" type="text" disabled="" value=""/><span style="margin-left:4px;color:gray">(3分)</span></span>;
+         p /= 2;
+      } 
+   }
+   else {
+      while( (child = 2*p) &lt;= H-&gt;Size) {
+         if ( child != H-&gt;Size &amp;&amp; <span><input style="max-width:none;width:19.2ch;max-height:500px" type="text" disabled="" value=""/><span style="margin-left:4px;color:gray">(3分)</span></span> )
+            child ++;
+         if ( <span><input style="max-width:none;width:19.2ch;max-height:500px" type="text" disabled="" value=""/><span style="margin-left:4px;color:gray">(3分)</span></span> ) {
+            H-&gt;Elements[p] = H-&gt;Elements[child];
+            p = child;
+         }
+         else
+            break;
+      }
+   }
+   H-&gt;Elements[p] = temp;
+}<br /></code></pre>
+</div></div></div></div></div></div></div></div>
+
+</body>
+</html>
